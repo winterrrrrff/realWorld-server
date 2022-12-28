@@ -67,7 +67,7 @@ const getCommentsFromArticle = asyncHandler(async (req, res) => {
                 const commentObj = await Comment.findById(commentId).exec();
                 // console.log(commentObj);
                 const temp =  await commentObj.toCommentResponse(false);
-                console.log(temp);
+                // console.log(temp);
                 return temp;
             }))
         })

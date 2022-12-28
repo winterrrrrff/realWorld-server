@@ -199,7 +199,7 @@ const feedArticles = asyncHandler(async (req, res) => {
         .skip(Number(offset))
         .exec();
 
-    console.log(`articles: ${filteredArticles}`);
+    // console.log(`articles: ${filteredArticles}`);
     const articleCount = await Article.count({author: {$in: loginUser.followingUsers}});
 
     return res.status(200).json({
