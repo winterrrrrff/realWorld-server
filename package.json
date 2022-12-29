@@ -2,7 +2,7 @@
   "name": "realworld-node-express-mongodb-javascript",
   "version": "1.0.0",
   "description": "realWorld Project",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server",
