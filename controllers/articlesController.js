@@ -167,6 +167,9 @@ const updateArticle = asyncHandler(async (req, res) => {
     if (article.body) {
         target.body = article.body;
     }
+    if (article.tagList) {
+        target.tagList = article.tagList;
+    }
 
     await target.save();
     return res.status(200).json({
